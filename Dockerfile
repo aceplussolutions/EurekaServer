@@ -4,7 +4,7 @@ FROM openjdk:17-jdk-slim as build
 MAINTAINER TWINKG
 
 # Add the application's jar to the container
-COPY target/auth-service-0.0.1-SNAPSHOT.jar auth-service.jar
+COPY target/eureka-0.0.1-SNAPSHOT.jar eureka-server.jar
 
 #execute the application
-ENTRYPOINT ["java","-jar","/auth-service.jar"]
+ENTRYPOINT ["java","-jar","/eureka-server.jar"]
